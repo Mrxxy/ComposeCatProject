@@ -3,14 +3,7 @@ package com.example.androiddevchallenge.compose
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxHeight
-import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
@@ -29,8 +22,8 @@ import com.example.androiddevchallenge.R
 import com.example.androiddevchallenge.ui.theme.purple200
 
 @Composable
-fun CatItemView(catBean: CatBean) {
-    Card(shape = RoundedCornerShape(10.dp)) {
+fun CatItemView(catBean: CatBean, modifier: Modifier) {
+    Card(shape = RoundedCornerShape(10.dp), modifier = modifier) {
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -72,7 +65,13 @@ fun CatItemView(catBean: CatBean) {
 @Composable
 fun DefaultPreview() {
     val cat = CatBean(R.drawable.cat_face_1, "Tom", "from China", 3)
-    CatItemView(cat)
+    CatItemView(cat, modifier = Modifier.fillMaxWidth())
 }
 
-data class CatBean(@DrawableRes var avatar: Int, var name: String, var desc: String, var age: Int)
+data class CatBean(
+    @DrawableRes var avatar: Int,
+    var name: String,
+    var desc: String,
+    var age: Int,
+    var color: String = "Yellow"
+)

@@ -10,22 +10,4 @@
       the License.
       -->
     <string name="app_name">AndroidDevChallenge</string>
-    <string-array name="desc_list">
-        <item>He is from China and is a five-month-old baby</item>
-        <item>When we picked him up, he was playing with a puppy</item>
-        <item>His master discarded him, we picked it back from the garbage dump</item>
-        <item>Her mother gave birth to a brother, which the host family could not afford</item>
-        <item>Her mother gave birth to a brother, which the host family could not afford</item>
-        <item>She is very obedient and clingy</item>
-        <item>I fell in love with him when I first met him</item>
-        <item>He is old and needs to find someone to take care of him</item>
-    </string-array>
-    <string-array name="name_list">
-        <item>Tom</item>
-        <item>Jerry</item>
-        <item>Frank</item>
-        <item>Cook</item>
-        <item>Sherry</item>
-        <item>Jessica</item>
-    </string-array>
 </resources>
