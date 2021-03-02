@@ -46,9 +46,12 @@ fun HomePage() {
                     modifier = Modifier.background(gray)
                 ) {
                     items(viewModel.catList.value) { cat ->
-                        CatItemView(catBean = cat, Modifier.clickable {
-                            viewModel.currentCat = cat
-                        })
+                        CatItemView(
+                            catBean = cat,
+                            Modifier.clickable {
+                                viewModel.currentCat = cat
+                            }
+                        )
                     }
                 }
             } else {

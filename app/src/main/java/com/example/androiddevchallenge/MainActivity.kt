@@ -21,9 +21,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.example.androiddevchallenge.ui.compose.HomePage
 
-
 class MainActivity : AppCompatActivity() {
-
     private val viewModel by viewModels<MainViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,4 +39,3 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
-
